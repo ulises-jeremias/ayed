@@ -29,7 +29,7 @@ public class BuscadorDeCamino {
     dfs(grafo, marcas, pos, lista, camino);
     return lista;
   }
-
+ 
   private void dfs(Grafo<String> grafo, boolean[] marcas, int[] pos, ListaGenerica<String> lista, ListaGenerica<String> camino) {
     marcas[pos[0]] = true;
     ListaGenerica<Vertice<String>> listaDeVertices = grafo.listaDeVertices();
